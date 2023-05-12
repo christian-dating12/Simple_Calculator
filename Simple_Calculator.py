@@ -8,3 +8,11 @@
 # 5. If yes, repeat step 1
 # 6. If no, Display "Thank you!" and the program will exit.
 # 7. Use Python Function and appropriate Exeptions to capture errors during runtime.
+
+# PSEUDOCODE
+# Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication, Division)
+# Ask the user for two inputs
+# Display the result
+# Ask the user to try again
+# if yes
+# if no
