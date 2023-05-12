@@ -24,7 +24,32 @@ print("\033[93m SIMPLE CALCULATOR \033[0m".center(105))
 print("\033[90m=" *100) 
 
 # Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication, Division)
-# Ask the user for two inputs
+# Ask the user for two inputs / define the operations
+def ADDITION():
+    input_number1 = int(input("\nEnter the first number: "))
+    input_number2 = int(input("\nEnter the second number: "))
+    print(input_number1,"+",input_number2,"=", input_number1 + input_number2)
+
+def SUBTRACTION():
+    input_number1 = int(input("\nEnter the first number: "))
+    input_number2 = int(input("\nEnter the second number: "))
+    print(input_number1,"-",input_number2,"=", input_number1 - input_number2)
+
+def MULTIPLICATION():
+    input_number1 = int(input("\nEnter first number: "))
+    input_number2 = int(input("\nEnter second number: "))
+    print(input_number1,"x",input_number2,"=", input_number2 * input_number2)
+
+def DIVISION():
+    try:
+        input_number1 = int(input("\nEnter first number: "))
+        input_number2 = int(input("\nEnter second number: "))
+        print(input_number1,"÷",input_number2,"=", input_number1 // input_number2)
+    
+    except ZeroDivisionError:
+        while True:
+            print("Division by zero.")
+            break
 # Display the result
 # Ask the user to try again
 # if yes
