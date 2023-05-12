@@ -49,7 +49,7 @@ def DIVISION():
         while True:
             print("Division by zero.")
             break
-        
+
 # Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication, Division)
 while True:
     print("\033[90m=" *100)
@@ -59,7 +59,27 @@ while True:
     print("\033[94mSUBTRACTION\033[0m".center(105))
     print("\033[94mMULTIPLICATION\033[0m".center(105))
     print("\033[94mDIVISION\033[0m".center(105))
+
 # Display the result
+    try: 
+        input_operation = str(input("\nChosen operation: "))
+        
+        if (str(input_operation)) == ("ADDITION"):
+                ADDITION()
+        elif (str(input_operation)) == ("SUBTRACTION"):
+                SUBTRACTION()
+        elif (str(input_operation)) == ("MULTIPLICATION"):
+                MULTIPLICATION()
+        elif (str(input_operation)) == ("DIVISION"):
+                DIVISION()
+        else:
+             print("\nInvalid. Please choose from the given operations above.")
+
+    except ValueError:
+        while True:
+            print("Invalid input. Please try again.")
+            break
+
 # Ask the user to try again
 # if yes
 # if no
