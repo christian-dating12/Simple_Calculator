@@ -23,7 +23,6 @@ print("\033[90m=" *100)
 print("\033[93m SIMPLE CALCULATOR \033[0m".center(105))
 print("\033[90m=" *100) 
 
-# Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication, Division)
 # Ask the user for two inputs / define the operations
 def ADDITION():
     input_number1 = int(input("\nEnter the first number: "))
@@ -50,6 +49,16 @@ def DIVISION():
         while True:
             print("Division by zero.")
             break
+        
+# Ask the user to choose one of the four math operations (Addition, Subtraction, Multiplication, Division)
+while True:
+    print("\033[90m=" *100)
+    print("\033[93mPlease choose from the following Math Operations:\033[0m".center(105))
+    print("\033[90m=" *100)
+    print("\033[94mADDITION\033[0m".center(105))
+    print("\033[94mSUBTRACTION\033[0m".center(105))
+    print("\033[94mMULTIPLICATION\033[0m".center(105))
+    print("\033[94mDIVISION\033[0m".center(105))
 # Display the result
 # Ask the user to try again
 # if yes
