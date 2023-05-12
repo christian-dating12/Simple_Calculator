@@ -74,12 +74,29 @@ while True:
                 DIVISION()
         else:
              print("\nInvalid. Please choose from the given operations above.")
+        
+        # Ask the user to try again or not
+        while True:
+                try_again = input("\nDo you want to try again, (YES or NO)?: ")
+                while True:
+
+                    # If yes
+                    if try_again == "YES":
+                        break
+                    else:
+                        print("\033[90m=" *100)
+                        print("\033[93mTHANK YOU!\033[0m".center(105))
+                        print("\033[90m=" *100)
+                        break
+                if try_again == "YES":
+                    break
+                
+                # If no
+                elif try_again == "NO":
+                    exit()
 
     except ValueError:
         while True:
             print("Invalid input. Please try again.")
             break
 
-# Ask the user to try again
-# if yes
-# if no
